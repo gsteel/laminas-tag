@@ -125,7 +125,7 @@ class HtmlCloudTest extends TestCase
     }
 
     /** @psalm-return array<array-key, array{0: string[]|array<string, array>}> */
-    public function invalidHtmlTagProvider(): array
+    public static function invalidHtmlTagProvider(): array
     {
         return [
             [['_foo']],
@@ -152,7 +152,7 @@ class HtmlCloudTest extends TestCase
     }
 
     /** @psalm-return array<array-key, array{0: array<string, map>}> */
-    public function invalidAttributeProvider(): array
+    public static function invalidAttributeProvider(): array
     {
         return [
             [
